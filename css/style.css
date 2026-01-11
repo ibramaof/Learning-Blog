@@ -54,6 +54,32 @@ li {
     padding-top: 1.1667em;
 }
 
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: #ECECEC;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
 
 main {
     display: grid;
@@ -64,6 +90,7 @@ main {
         "... one ..."
         "... two ..."
         "... thre ..."
+        "... btn ..."
     ;
     row-gap: 2.125em;
 }
@@ -140,4 +167,24 @@ ul {
 img {
     width: 100%;
     border-radius: 3px;
+}
+
+.btn {
+    grid-area: btn;
+    margin: 1.68em auto 2.625em;
+    border: none;
+    color: #0E0E0E;
+    background-color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.3125em;
+    padding-bottom: 2.3125em;
 }

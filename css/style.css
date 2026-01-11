@@ -80,9 +80,25 @@ li {
 
 
 
+/* LayOut */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "main"
+        "foot"
+    ;
+}
+
+header {
+    grid-area: head;
+    /* padding: 0 1.25em */
+}
 
 main {
     display: grid;
+    grid-area: main;
     grid-template-columns: 1.25em 1fr 1.25em;
     grid-template-areas:
 
@@ -111,16 +127,6 @@ main {
     grid-area: thre;
 }
 
-
-
-
-
-
-
-
-
-
-
 .heading {
     margin: 0;
 }
@@ -128,7 +134,9 @@ main {
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(0.75rem, 3vw, 1.5rem);
 
 }
 
@@ -160,9 +168,11 @@ ul {
     background-image: url('../images/hero.png');
     background-size: cover;
     width: 100%;
-    padding: 5.4em 1.25em 1.56em;
+    padding: clamp(4rem, 12vw, 10rem) clamp(1.25rem, 6vw, 4rem) clamp(1.5rem, 6vw, 3rem);
 
 }
+
+
 
 img {
     width: 100%;
@@ -176,10 +186,12 @@ img {
     color: #0E0E0E;
     background-color: #FFFFFF;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
 footer {
+    grid-area: foot;
     background-color: #202020;
     display: flex;
     flex-direction: column;
@@ -187,4 +199,32 @@ footer {
     align-items: center;
     padding-top: 3.3125em;
     padding-bottom: 2.3125em;
+}
+
+
+
+
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-areas:
+
+            "main main main main main main main main main main main main main"
+            "... one one one ... two two two ... thre thre thre ..."
+            "... btn btn btn btn btn btn btn btn btn btn ... ..."
+        ;
+        row-gap: 2.125em;
+    }
+
+
+    .hero-post .article-text {
+        width: 60%;
+    }
+
 }

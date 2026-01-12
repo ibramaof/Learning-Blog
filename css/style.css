@@ -106,7 +106,10 @@ main {
         "... one ..."
         "... two ..."
         "... thre ..."
-        "... btn ..."
+        "... four ..."
+        "... five ..."
+        "... six ..."
+        "... ... ..."
     ;
     row-gap: 2.125em;
 }
@@ -125,6 +128,18 @@ main {
 
 .container3 {
     grid-area: thre;
+}
+
+.container4 {
+    grid-area: four;
+}
+
+.container5 {
+    grid-area: five;
+}
+
+.container6 {
+    grid-area: six;
 }
 
 .heading {
@@ -176,7 +191,7 @@ ul {
 
 img {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .btn {
@@ -217,7 +232,8 @@ footer {
 
             "main main main main main main main main main main main main main"
             "... one one one ... two two two ... thre thre thre ..."
-            "... btn btn btn btn btn btn btn btn btn btn ... ..."
+            "... four four four  ... five five five ... six six six ..."
+            "... ... ... ... ... ... ... ... ... ... ... ... ..."
         ;
         row-gap: 2.125em;
     }

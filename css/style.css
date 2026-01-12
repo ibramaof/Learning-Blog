@@ -318,7 +318,9 @@ footer {
         margin: 3.3125em 0 0;
     }
 
-
+    .grid-posts .date {
+        margin-top: 0.875em;
+    }
 
     main {
         display: grid;

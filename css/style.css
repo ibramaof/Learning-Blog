@@ -35,7 +35,6 @@ li {
 .date {
     font-size: 0.75rem;
     font-weight: lighter;
-    margin: 0 0 0.6667em 0;
 }
 
 .article-text {
@@ -43,9 +42,6 @@ li {
     margin: 0.5em 0 0 0;
 }
 
-/* .grid-posts .date {
-    font-size: 0.885rem;
-} */
 
 .grid-posts .heading {
     font-size: 1.5rem;
@@ -57,11 +53,15 @@ li {
     margin: 1.25em 0 0;
 }
 
+.aboutMe-title {
+    margin: 0;
+}
 
-/* .btn {
-    font-size: 1rem;
-    font-weight: bold;
-} */
+.container-0 .aboutMe-p {
+    margin: 0.65em 0 3.125em 0;
+}
+
+
 
 .footer-text {
     color: #ECECEC;
@@ -97,7 +97,6 @@ body {
 
 header {
     grid-area: head;
-    /* padding: 0 1.25em */
 }
 
 main {
@@ -260,10 +259,18 @@ img {
     margin: 2.187em auto;
 }
 
-.container-0 p {
-    margin: 0;
+
+
+.about-me .aboutMe-img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 1.69em;
 }
 
+.about-me {
+    text-align: left;
+}
 
 .btn {
     grid-area: btn;
@@ -322,6 +329,24 @@ footer {
         margin-top: 0.875em;
     }
 
+
+
+
+
+    .toggle-cont {
+        display: flex;
+        justify-content: start;
+        gap: 2.06em;
+
+    }
+
+    .toggle-text {
+        max-width: 770px;
+        text-align: left;
+
+    }
+
+
     main {
         display: grid;
         grid-area: main;
@@ -338,11 +363,13 @@ footer {
 
     .post-cont {
         margin: 0 auto;
-        width: 100%;
+        /* width: 100%; */
+        max-width: 844PX;
     }
 
     .post-page {
         display: grid;
+        max-width: 1085;
         grid-template-columns: repeat(17, 1fr);
         grid-template-areas:
 

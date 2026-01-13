@@ -18,22 +18,28 @@ body {
     font-size: 0.84rem;
 }
 
-li {
+li,
+.date,
+.footer-copyright,
+.footer-text {
     font-size: 0.75rem;
+}
+
+li {
     font-weight: 600;
 }
 
-.hero-post h1 {
-    color: #FFFFFF;
-    font-size: 2rem;
-}
-
+.hero-post h1,
 .hero-post p {
     color: #FFFFFF;
 }
 
+.hero-post h1 {
+    font-size: 2rem;
+}
+
+
 .date {
-    font-size: 0.75rem;
     font-weight: lighter;
 }
 
@@ -53,27 +59,24 @@ li {
     margin: 1.25em 0 0;
 }
 
-.aboutMe-title {
-    margin: 0;
-}
-
 .container-0 .aboutMe-p {
     margin: 0.65em 0 3.125em 0;
 }
 
-
+.footer-text,
+.footer-copyright,
+.aboutMe-title {
+    margin: 0;
+}
 
 .footer-text {
     color: #ECECEC;
-    font-size: 0.75rem;
-    margin: 0;
+
 }
 
 .footer-copyright {
     color: #D7D7D7;
-    font-size: 0.75rem;
     font-weight: normal;
-    margin: 0;
 }
 
 
@@ -84,8 +87,13 @@ li {
 
 
 
-/* LayOut */
 
+/* --------layout-------- */
+
+
+/* ---grid section--- */
+
+/* HOME page */
 body {
     display: grid;
     grid-template-areas:
@@ -147,7 +155,7 @@ main {
 
 
 
-/* post page layout */
+/* post page ,aboutMe page*/
 
 .post-page {
     display: grid;
@@ -306,11 +314,7 @@ footer {
         font-size: 1.25rem;
     }
 
-    li {
-        font-size: 1rem;
-    }
-
-
+    li,
     .date {
         font-size: 1rem;
     }
@@ -328,9 +332,6 @@ footer {
     .grid-posts .date {
         margin-top: 0.875em;
     }
-
-
-
 
 
     .toggle-cont {
